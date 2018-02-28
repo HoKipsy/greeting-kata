@@ -5,6 +5,14 @@ public class morning {
     }
     
     pubic static void greeting(String name) {
-        System.out.println("Happy Easter, " + name + "!");
+        System.out.println(csillag() + "Happy Easter, " + name + "!" + csillag());
+    }
+    
+    public static String csillag() {
+        String csillagok = "";
+        for(int i = 0; i < 80; i++) {
+            csillagok = csillagok + "*";
+        };
+        return csillagok;
     }
 }
