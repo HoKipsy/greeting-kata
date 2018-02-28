@@ -1,11 +1,17 @@
-public class Morning {
-
-    public static void main(String[] args) {
-        System.out.println("Good morning!");
-    }
-    
-    public static void greeting(String name) {
-        System.out.println(csillag() + "Happy Easter, " + name + "!" + csillag());
+public class Morning
+{
+	public static void main(String[] args) {
+		System.out.println(greeting("Sasha"));
+	}
+	
+    public static String greeting(String name) {
+        String kiirando = "";
+        if (name.length() == 0){
+            kiirando = csillag() + "\n" + "Happy Easter, my friend!" + "\n" + csillag();
+        } else {
+            kiirando = csillag() + "\n" + "Happy Easter, " + name + "!" + "\n" + csillag();
+        }
+        return kiirando;
     }
     
     public static String csillag() {
