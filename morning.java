@@ -5,6 +5,6 @@ public class morning {
     }
     
     pubic static void greeting(String name) {
-        System.out.println("Good morning " + name + "!");
+        System.out.println("Happy Easter, " + name + "!");
     }
 }
